@@ -116,4 +116,5 @@ En este proyecto, se nos sugirió emplear una herramienta de planificación y or
 Desarrolle un diagrama de flujo e instale las dependencias que necesitaba
 
 Diagrama de flujo
-![Diagrama]: (./diagrama.png)
+![Diagrama](https://github.com/YahairaPerez1994/md-links/assets/124813555/ee239a76-923d-4966-aa17-5adbdf6d0cdc)
+
