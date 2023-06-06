@@ -116,5 +116,4 @@ En este proyecto, se nos sugirió emplear una herramienta de planificación y or
 Desarrolle un diagrama de flujo e instale las dependencias que necesitaba
 
 Diagrama de flujo
-
-"C:\Users\YAHAIRA\Desktop\Diagrama.png"
+![Diagrama]: (./diagrama.png)
