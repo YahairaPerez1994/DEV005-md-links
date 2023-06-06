@@ -1,5 +1,8 @@
 {
-  "name": "md-links",
+  "name": "mdlinks-perez",
+  "bin": {
+    "mdlinks-perez": "cli.js"
+  },
   "version": "0.1.0",
   "engines": {
     "node": ">=16.x"
@@ -19,5 +22,14 @@
     "eslint": "^8.40.0",
     "jest": "^29.5.0",
     "node-fetch": "^3.3.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YahairaPerez1994/md-links.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YahairaPerez1994/md-links/issues"
+  },
+  "homepage": "https://github.com/YahairaPerez1994/md-links#readme"
 }

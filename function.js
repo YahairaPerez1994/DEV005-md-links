@@ -3,7 +3,8 @@ const path = require('path');
 
 //Identificar si la ruta existe
 const existRoute = (route) => fs.existsSync(route)
-  
+
+
 //Validar si la ruta es absoluta,de lo contrario, se convierte la ruta relativa en absoluta
 const routeAbsolute = (route) => {
   if (path.isAbsolute(route)){
@@ -38,6 +39,7 @@ const routeAbsolute = (route) => {
   // console.log(linksExtracted);
   return [...linksExtracted]; //convertir el objeto a un array (Retorna un array con todas las coincidencias encontradas)
 };
+
 // Esta funcion retorna propiedades del link
 const readAndGetLinks = (filePaths) => {
   return new Promise((resolve, reject) => {
@@ -63,6 +65,7 @@ const readAndGetLinks = (filePaths) => {
     resolve (finalObject);
   });
 };
+
 //Validar los links dentro del array
 const validatingTheLinks = (collectedLinks) => {
 // console.log(collectedLinks);
@@ -118,39 +121,12 @@ const validatingTheLinks = (collectedLinks) => {
     }
     return stats;
   };
-  const collectedLinks = [
-    {
-      href: 'https://github.com/markdown-it/markdown-it',
-      text: 'Link de prueba',
-      file: './prueba/prueba1.md',
-      status: 200,
-      ok: 'OK'
-    },
-    {
-      href: 'https://github.com/markedjs/marked',
-      text: 'Link de prueba',
-      file: './prueba/prueba1.md',
-      status: 200,
-      ok: 'OK' 
-    },
-    {
-      href: 'https://nodejs.ortttg/es/',
-      text: 'Link de prueba',
-      file: './prueba/prueba3.md',
-      status: 0,
-      ok: 'fail'
-    }
-  ]
 
     module.exports = {
       existRoute,
       routeAbsolute,
-      readDirectory,
-      gettingTheLinks,
       readAndGetLinks,
       validatingTheLinks,
-      totalLinks,
-      brokenLinks,
-      uniqLinks,
       getStats,
+      readDirectory
     };
