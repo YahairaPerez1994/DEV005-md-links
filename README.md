@@ -117,4 +117,4 @@ Desarrolle un diagrama de flujo e instale las dependencias que necesitaba
 
 Diagrama de flujo
 
-[![Diagrama de flujo]: (diagrama.png)](https://user-images.githubusercontent.com/124813555/240490495-79113eb1-d30e-428f-a0f2-faa31e258f1a.jpg)
+"C:\Users\YAHAIRA\Desktop\Diagrama.png"
