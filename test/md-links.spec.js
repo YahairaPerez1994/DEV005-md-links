@@ -19,8 +19,9 @@ describe('mdLinks', () => {
     const path = 'C:/Users/YAHAIRA/Desktop/DEV005-md-links/prueba';
     mdLinks(path, {validate: true, stats: true}).then((res) => {
       expect(res).toEqual( 'Total: 8 Uniq: 7 Broken: 1');
-      done()
+      
     });
+    done()
    });
 
   it('Debería devolver true si la ruta existe', () => {

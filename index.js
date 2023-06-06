@@ -33,7 +33,7 @@ const mdLinks = (path, optionsObj) => {
         }});
       };
 module.exports = {
-  mdLinks
+  mdLinks,
 };
 
 

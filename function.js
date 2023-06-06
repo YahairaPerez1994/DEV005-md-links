@@ -40,6 +40,8 @@ const routeAbsolute = (route) => {
   return [...linksExtracted]; //convertir el objeto a un array (Retorna un array con todas las coincidencias encontradas)
 };
 
+// ...
+
 // Esta funcion retorna propiedades del link
 const readAndGetLinks = (filePaths) => {
   return new Promise((resolve, reject) => {
@@ -50,21 +52,25 @@ const readAndGetLinks = (filePaths) => {
       const content = fs.readFileSync(file, 'utf8');
       const links = gettingTheLinks(content);
 
-    for (let i = 0; i < links.length; i++) {
-      const element = links[i][0];
-      const linkText = element.replace("[", "").replace(")", "");
-      const arrayLink = linkText.split("](");
-      //Creación del objeto dentro del array anterior
-      finalObject.push({
-        href: arrayLink[1],
-        text: arrayLink[0],
-        file: file,
-      });
-    }
-  });
-    resolve (finalObject);
+      for (let i = 0; i < links.length; i++) {
+        const element = links[i][0];
+        const linkText = element.replace("[", "").replace(")", "");
+        const arrayLink = linkText.split("](");
+        // Creación del objeto dentro del array anterior
+        finalObject.push({
+          href: arrayLink[1],
+          text: arrayLink[0],
+          file: file,
+        });
+      }
+    });
+
+    resolve(finalObject);
   });
 };
+
+// ...
+
 
 //Validar los links dentro del array
 const validatingTheLinks = (collectedLinks) => {

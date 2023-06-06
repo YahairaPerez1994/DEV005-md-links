@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const { mdLinks } = require("./index.js");
+const { colors } = require('colors');
 
 const path = process.argv[2];
 const optionsObj = { validate: false, stats: false };
